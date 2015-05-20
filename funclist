@@ -1,0 +1,7 @@
+_main: CODE, 97 0 147
+_tc_int: CODE, 4 0 81
+__initialization: CODE, 87 0 6
+_CheckTick24Timer: CODE, 334 0 89
+_Tick24BitTimer: CODE, 244 0 90
+_SetClockSpeed: CODE, 423 0 7
+Total: 420
