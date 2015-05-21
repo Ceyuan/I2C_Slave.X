@@ -84,7 +84,7 @@ void I2C_Initialize(void)
     // initialize the hardware
     // BF RCinprocess_TXcomplete; UA dontupdate; SMP Sample At Middle; P stopbit_notdetected; S startbit_notdetected; R_nW write_noTX; CKE Idle to Active; D_nA lastbyte_address; 
     SSP1STAT = 0x00;
-    // SSPEN enabled; WCOL no_collision; SSPOV no_overflow; CKP Idle:Low, Active:High; SSPM 7 Bit; 
+    // SSPEN enabled; WCOL no_collision; SSPOV no_overflow; CKP Idle:Low, Active:High; SSPM 7 Bit Interrupt;
     SSPCON1 = 0x2E;
     // ACKSTAT received; RCEN disabled; RSEN disabled; ACKEN disabled; SEN enabled; ACKDT acknowledge; GCEN disabled; PEN disabled; 
     SSP1CON2 = 0x01;
