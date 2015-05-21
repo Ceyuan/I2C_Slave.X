@@ -1,0 +1,387 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1783 ]
+[d frameptr 6 ]
+"120 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/i2c.c
+[e E4724 . `uc
+I2C_SLAVE_WRITE_REQUEST 0
+I2C_SLAVE_READ_REQUEST 1
+I2C_SLAVE_WRITE_COMPLETED 2
+I2C_SLAVE_READ_COMPLETED 3
+]
+"185
+[e E4748 . `uc
+SLAVE_NORMAL_DATA 0
+SLAVE_DATA_ADDRESS 1
+]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files\Microchip\xc8\v1.32\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v1.32\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files\Microchip\xc8\v1.32\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files\Microchip\xc8\v1.32\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files\Microchip\xc8\v1.32\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.32\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files\Microchip\xc8\v1.32\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v1.32\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files\Microchip\xc8\v1.32\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files\Microchip\xc8\v1.32\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files\Microchip\xc8\v1.32\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files\Microchip\xc8\v1.32\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.32\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.32\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files\Microchip\xc8\v1.32\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"44 I:\Heat Recovery\Shane\I2C_Slave.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"123
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+"82 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/i2c.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 0 0 ]
+"105
+[v _I2C_ISR I2C_ISR `(v  1 e 0 0 ]
+"169
+[v _I2C_StatusCallback I2C_StatusCallback `(v  1 e 0 0 ]
+"49 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+"56
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
+"67
+[v _OSCILLATOR_InitializeNew OSCILLATOR_InitializeNew `(v  1 e 0 0 ]
+"50 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
+"15 I:\Heat Recovery\Shane\I2C_Slave.X\NB_Time.c
+[v _SetClockSpeed SetClockSpeed `(v  1 e 0 0 ]
+"30
+[v _Tick24BitTimer Tick24BitTimer `(ul  1 e 4 0 ]
+"53
+[v _CheckTick24Timer CheckTick24Timer `(ui  1 e 2 0 ]
+[s S56 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"358 C:\Program Files\Microchip\xc8\v1.32\include\pic16f1783.h
+[s S65 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S70 . 1 `S56 1 . 1 0 `S65 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES70  1 e 1 @11 ]
+[s S160 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"656
+[u S169 . 1 `S160 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES169  1 e 1 @17 ]
+"794
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"1105
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1174
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1243
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S92 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1263
+[s S101 . 1 `uc 1 TRISC 1 0 :8:0 
+]
+[u S103 . 1 `S92 1 . 1 0 `S101 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES103  1 e 1 @142 ]
+"1312
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+"1349
+[v _PIE1bits PIE1bits `VES169  1 e 1 @145 ]
+[s S24 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1510
+[s S33 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S38 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES38  1 e 1 @149 ]
+"1683
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1740
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+[s S457 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1762
+[s S466 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S470 . 1 `S457 1 . 1 0 `S466 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES470  1 e 1 @153 ]
+"1811
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @154 ]
+"2156
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2225
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2294
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2314
+[v _LATCbits LATCbits `VES103  1 e 1 @270 ]
+"2902
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"3159
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3223
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3280
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"3335
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"3386
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+"3447
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"4323
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"4392
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"4461
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"4530
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"4555
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"4592
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
+"4629
+[v _SSP1MSK SSP1MSK `VEuc  1 e 1 @531 ]
+"4666
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"4738
+[v _SSP1STATbits SSP1STATbits `VES169  1 e 1 @532 ]
+"4782
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @533 ]
+[s S346 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4811
+[s S355 . 1 `uc 1 SSPM 1 0 :4:0 
+]
+[u S357 . 1 `S346 1 . 1 0 `S355 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES357  1 e 1 @533 ]
+"4990
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
+"5062
+[v _SSP1CON2bits SSP1CON2bits `VES169  1 e 1 @534 ]
+"5111
+[v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @535 ]
+"10582
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"10724
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"11918
+[v _RD RD `VEb  1 e 0 @3240 ]
+"12262
+[v _WR WR `VEb  1 e 0 @3241 ]
+"12264
+[v _WREN WREN `VEb  1 e 0 @3242 ]
+"42 I:\Heat Recovery\Shane\I2C_Slave.X\main.c
+[v _tick_us1 tick_us1 `ul  1 e 4 0 ]
+"63 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/i2c.c
+[v _I2C_slaveWriteData I2C_slaveWriteData `VEuc  1 e 1 0 ]
+"11 I:\Heat Recovery\Shane\I2C_Slave.X\NB_Time.c
+[v _timer24overflow timer24overflow `i  1 e 2 0 ]
+"44 I:\Heat Recovery\Shane\I2C_Slave.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"45
+[v main@sysLED sysLED `ul  1 a 4 15 ]
+"112
+} 0
+"30 I:\Heat Recovery\Shane\I2C_Slave.X\NB_Time.c
+[v _Tick24BitTimer Tick24BitTimer `(ul  1 e 4 0 ]
+{
+"31
+[v Tick24BitTimer@temp temp `ul  1 a 4 8 ]
+"30
+[v Tick24BitTimer@timer4 timer4 `ul  1 p 4 0 ]
+"45
+} 0
+"15
+[v _SetClockSpeed SetClockSpeed `(v  1 e 0 0 ]
+{
+"21
+} 0
+"49 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 0 0 ]
+{
+"54
+} 0
+"50 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 0 0 ]
+{
+"74
+} 0
+"56 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 0 0 ]
+{
+"66
+} 0
+"82 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/i2c.c
+[v _I2C_Initialize I2C_Initialize `(v  1 e 0 0 ]
+{
+"103
+} 0
+"53 I:\Heat Recovery\Shane\I2C_Slave.X\NB_Time.c
+[v _CheckTick24Timer CheckTick24Timer `(ui  1 e 2 0 ]
+{
+[v CheckTick24Timer@timeout timeout `ul  1 p 4 0 ]
+"67
+} 0
+"123 I:\Heat Recovery\Shane\I2C_Slave.X\main.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 0 0 ]
+{
+"145
+} 0
+"105 I:\Heat Recovery\Shane\I2C_Slave.X\mcc_generated_files/i2c.c
+[v _I2C_ISR I2C_ISR `(v  1 e 0 0 ]
+{
+"107
+[v I2C_ISR@i2c_data i2c_data `uc  1 a 1 4 ]
+"145
+} 0
+"169
+[v _I2C_StatusCallback I2C_StatusCallback `(v  1 e 0 0 ]
+{
+[v I2C_StatusCallback@i2c_bus_state i2c_bus_state `E4724  1 a 1 wreg ]
+[v I2C_StatusCallback@i2c_bus_state i2c_bus_state `E4724  1 a 1 wreg ]
+"172
+[v I2C_StatusCallback@EEPROM_Buffer EEPROM_Buffer `[128]uc  1 s 128 EEPROM_Buffer ]
+"184
+[v I2C_StatusCallback@eepromAddress eepromAddress `uc  1 s 1 eepromAddress ]
+"185
+[v I2C_StatusCallback@slaveWriteType slaveWriteType `uc  1 s 1 slaveWriteType ]
+"169
+[v I2C_StatusCallback@i2c_bus_state i2c_bus_state `E4724  1 a 1 2 ]
+"233
+} 0

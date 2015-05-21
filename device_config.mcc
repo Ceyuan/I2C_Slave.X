@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC16F1783" mcc_version="v2.25">
+    <managers>
+        <manager generated="true" name="Pin Manager" reloadPin="manual">
+            <setting name="SDISEL" option="RC4"/>
+            <setting name="CCP2SEL" option="RC1"/>
+            <setting name="C2OUTSEL" option="RA5"/>
+            <setting name="CCP1SEL" option="RC2"/>
+            <setting name="SCKSEL" option="RC3"/>
+            <setting name="SDOSEL" option="RC5"/>
+            <setting name="RXSEL" option="RC7"/>
+            <setting name="TXSEL" option="RC6"/>
+            <setting name="package" option="SSOP28"/>
+            <setting name="sorting" option="true"/>
+            <resource customName="SCL" digital="true" direction="BIDIRECTIONAL" function="SCL" ioc="0" module="MSSP" name="RC3" start="true" type="pin" wpu="false"/>
+            <resource customName="SDA" digital="true" direction="BIDIRECTIONAL" function="SDA" ioc="0" module="MSSP" name="RC4" start="true" type="pin" wpu="false"/>
+            <file checksum="3451099282" modified="false" name="pin_manager.c" path="mcc_generated_files/pin_manager.c"/>
+            <file checksum="2031568681" modified="true" name="pin_manager.h" path="mcc_generated_files/pin_manager.h"/>
+        </manager>
+        <manager generated="true" name="Interrupt Manager" reloadPin="manual">
+            <setting name="preemptHigh" option="true"/>
+            <setting name="preemptLow" option="true"/>
+            <setting name="useIPEN" option="false"/>
+            <file checksum="3055302912" modified="true" name="interrupt_manager.c" path="mcc_generated_files/interrupt_manager.c"/>
+            <file checksum="1568404786" modified="true" name="interrupt_manager.h" path="mcc_generated_files/interrupt_manager.h"/>
+            <interrupt module="MSSP" name="SSPI" priority="2"/>
+        </manager>
+        <manager generated="false" name="System" reloadPin="manual">
+            <initializer comment="" name="Initialize">
+                <setting name="SPLLEN" option="disabled" register="OSCCON"/>
+                <setting name="SCS" option="FOSC" register="OSCCON"/>
+                <setting name="IRCF" option="16MHz_HF" register="OSCCON"/>
+                <setting name="OSTS" option="intosc" register="OSCSTAT"/>
+                <setting name="HFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="HFIOFS" option="not0.5percent_acc" register="OSCSTAT"/>
+                <setting name="PLLR" option="disabled" register="OSCSTAT"/>
+                <setting name="MFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="T1OSCR" option="disabled" register="OSCSTAT"/>
+                <setting name="LFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="HFIOFL" option="not2percent_acc" register="OSCSTAT"/>
+                <setting name="TUN" option="0x0" register="OSCTUNE"/>
+                <additionalSetting name="pllMultiplier" option=""/>
+                <additionalSetting name="extclk" option="1.0 MHz"/>
+            </initializer>
+            <initializer comment="" name="InitializeNew">
+                <setting name="SPLLEN" option="enabled" register="OSCCON"/>
+                <setting name="SCS" option="FOSC" register="OSCCON"/>
+                <setting name="IRCF" option="16MHz_HF" register="OSCCON"/>
+                <setting name="OSTS" option="intosc" register="OSCSTAT"/>
+                <setting name="HFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="HFIOFS" option="not0.5percent_acc" register="OSCSTAT"/>
+                <setting name="PLLR" option="disabled" register="OSCSTAT"/>
+                <setting name="MFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="T1OSCR" option="disabled" register="OSCSTAT"/>
+                <setting name="LFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="HFIOFL" option="not2percent_acc" register="OSCSTAT"/>
+                <setting name="TUN" option="0x0" register="OSCTUNE"/>
+                <additionalSetting name="pllMultiplier" option=""/>
+                <additionalSetting name="extclk" option="1.0 MHz"/>
+            </initializer>
+            <setting name="IESO" option="ON"/>
+            <setting name="BOREN" option="ON"/>
+            <setting name="PWRTE" option="OFF"/>
+            <setting name="FOSC" option="INTOSC"/>
+            <setting name="FCMEN" option="ON"/>
+            <setting name="MCLRE" option="ON"/>
+            <setting name="CP" option="OFF"/>
+            <setting name="CPD" option="OFF"/>
+            <setting name="WDTE" option="OFF"/>
+            <setting name="CLKOUTEN" option="OFF"/>
+            <setting name="WRT" option="OFF"/>
+            <setting name="LPBOR" option="OFF"/>
+            <setting name="VCAPEN" option="OFF"/>
+            <setting name="LVP" option="OFF"/>
+            <setting name="STVREN" option="ON"/>
+            <setting name="PLLEN" option="ON"/>
+            <setting name="BORV" option="LO"/>
+            <setting name="generateConfigBits" option="false"/>
+            <file checksum="448412607" modified="false" name="mcc.c" path="mcc_generated_files/mcc.c"/>
+            <file checksum="2259772020" modified="true" name="mcc.h" path="mcc_generated_files/mcc.h"/>
+        </manager>
+    </managers>
+    <modules>
+        <module generated="false" mode="I2C Slave Interrupt" name="MSSP" order="0" reloadPin="manual" type="mssp">
+            <initializer comment="" name="Initialize">
+                <setting name="BF" option="RCinprocess_TXcomplete" register="SSP1STAT"/>
+                <setting name="UA" option="dontupdate" register="SSP1STAT"/>
+                <setting name="SMP" option="Sample At Middle" register="SSP1STAT"/>
+                <setting name="P" option="stopbit_notdetected" register="SSP1STAT"/>
+                <setting name="S" option="startbit_notdetected" register="SSP1STAT"/>
+                <setting name="R_nW" option="write_noTX" register="SSP1STAT"/>
+                <setting name="CKE" option="Idle to Active" register="SSP1STAT"/>
+                <setting name="D_nA" option="lastbyte_address" register="SSP1STAT"/>
+                <setting name="SSPEN" option="enabled" register="SSPCON1"/>
+                <setting name="WCOL" option="no_collision" register="SSPCON1"/>
+                <setting name="SSPOV" option="no_overflow" register="SSPCON1"/>
+                <setting name="CKP" option="Idle:Low, Active:High" register="SSPCON1"/>
+                <setting name="SSPM" option="7 Bit" register="SSPCON1"/>
+                <setting name="ACKSTAT" option="received" register="SSP1CON2"/>
+                <setting name="RCEN" option="disabled" register="SSP1CON2"/>
+                <setting name="RSEN" option="disabled" register="SSP1CON2"/>
+                <setting name="ACKEN" option="disabled" register="SSP1CON2"/>
+                <setting name="ACKDT" option="acknowledge" register="SSP1CON2"/>
+                <setting name="SEN" option="enabled" register="SSP1CON2"/>
+                <setting name="GCEN" option="enabled" register="SSP1CON2"/>
+                <setting name="PEN" option="disabled" register="SSP1CON2"/>
+                <setting name="BOEN" option="disabled" register="SSP1CON3"/>
+                <setting name="AHEN" option="disabled" register="SSP1CON3"/>
+                <setting name="SBCDE" option="disabled" register="SSP1CON3"/>
+                <setting name="SDAHT" option="100ns" register="SSP1CON3"/>
+                <setting name="ACKTIM" option="ackseq" register="SSP1CON3"/>
+                <setting name="DHEN" option="disabled" register="SSP1CON3"/>
+                <setting name="PCIE" option="disabled" register="SSP1CON3"/>
+                <setting name="SCIE" option="disabled" register="SSP1CON3"/>
+                <setting name="SSPMSK" option="127" register="SSP1MSK"/>
+                <setting name="SSPBUF" option="0x0" register="SSP1BUF"/>
+                <setting name="SSPADD" option="96" register="SSP1ADD"/>
+            </initializer>
+            <setting name="SSPM" option="7 Bit"/>
+            <setting name="slaveAddress" option="0x60"/>
+            <setting name="slaveAddressMask" option="0x7F"/>
+            <setting name="writeBuffer" option="8"/>
+            <setting name="readBuffer" option="8"/>
+            <file checksum="3005178946" modified="false" name="i2c.c" path="mcc_generated_files/i2c.c"/>
+            <file checksum="4118405009" modified="false" name="i2c.h" path="mcc_generated_files/i2c.h"/>
+        </module>
+    </modules>
+</configuration>
